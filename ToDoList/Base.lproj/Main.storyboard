@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="JhN-ba-OJf" style="IBUITableViewCellStyleDefault" id="sML-hz-KBX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="JhN-ba-OJf" style="IBUITableViewCellStyleDefault" id="sML-hz-KBX">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sML-hz-KBX" id="hWf-BM-sd2">
@@ -39,7 +39,13 @@
                             <outlet property="delegate" destination="9sr-7J-xsq" id="jQO-3O-hcp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To Do Items" id="kn0-6W-Utq"/>
+                    <navigationItem key="navigationItem" title="To Do Items" id="kn0-6W-Utq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="khT-bg-dTv">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="9sr-7J-xsq" id="qFc-hZ-Zqo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZH-pJ-BQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

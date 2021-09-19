@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B900DDF326F7B428008332B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900DDF226F7B428008332B0 /* Model.swift */; };
 		B93A8A3C26F52A2F0086245C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A8A3B26F52A2F0086245C /* AppDelegate.swift */; };
 		B93A8A3E26F52A2F0086245C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A8A3D26F52A2F0086245C /* SceneDelegate.swift */; };
 		B93A8A4326F52A2F0086245C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93A8A4126F52A2F0086245C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B900DDF226F7B428008332B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B93A8A3826F52A2F0086245C /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93A8A3B26F52A2F0086245C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B93A8A3D26F52A2F0086245C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				B93A8A3D26F52A2F0086245C /* SceneDelegate.swift */,
 				B93A8A4126F52A2F0086245C /* Main.storyboard */,
 				B93A8A5126F52B890086245C /* TableViewController.swift */,
+				B900DDF226F7B428008332B0 /* Model.swift */,
 				B93A8A4426F52A300086245C /* Assets.xcassets */,
 				B93A8A4626F52A300086245C /* LaunchScreen.storyboard */,
 				B93A8A4926F52A300086245C /* Info.plist */,
@@ -140,6 +143,7 @@
 				B93A8A3C26F52A2F0086245C /* AppDelegate.swift in Sources */,
 				B93A8A5226F52B890086245C /* TableViewController.swift in Sources */,
 				B93A8A3E26F52A2F0086245C /* SceneDelegate.swift in Sources */,
+				B900DDF326F7B428008332B0 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
