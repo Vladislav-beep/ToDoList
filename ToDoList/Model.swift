@@ -8,17 +8,21 @@
 import Foundation
 
 
-var toDoItems = ["1", "wgfsa"]
+var toDoItems: [[String: Any]] = [["Name": "Позвонить маме", "isCompleted": false]]
 
-func addItem(nameItem: String) {
-    toDoItems.append(nameItem)
+func addItem(nameItem: String, isCompleted: Bool) {
+    toDoItems.append(["NameItem": nameItem, "isComleted": false])
     saveData()
 
 }
 
 func removeItem(index: Int) {
     toDoItems.remove(at: index)
-    saveData()
+    saveData() 
+}
+
+func changeState(at item: Int) {
+    toDoItems[item]["is Completed"] = !((toDoItems[item]["is Completed"] as? Bool)!)
 }
 
 func saveData() {

@@ -15,6 +15,8 @@ class TableViewController: UITableViewController {
 
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        addItem(nameItem: "new value", isCompleted: false)
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -30,9 +32,16 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-
-        cell.textLabel?.text = toDoItems[indexPath.row]
-
+        
+        let currentItem = toDoItems[indexPath.row]
+        cell.textLabel?.text = currentItem["Name"] as? String
+        
+        if (currentItem["isCompleted"] as? Bool)! {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
@@ -45,17 +54,17 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            removeItem(index: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
